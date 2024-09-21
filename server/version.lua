@@ -1,5 +1,5 @@
 local KullandiginVersiyon = nil
-PerformHttpRequest("https://raw.githubusercontent.com/FiveEngine/FiveEngine-OzelPlaka/main/fxmanifest.lua", function(err, text, headers)
+PerformHttpRequest("https://raw.githubusercontent.com/FiveEngine/baTu-patlican/refs/heads/main/fxmanifest.lua", function(err, text, headers)
     if err == 200 then
         KullandiginVersiyon = LoadResourceFile(GetCurrentResourceName(), "fxmanifest.lua"):match("version '(%d+%.%d+%.%d+)'")
         local GuncelVersiyon = text:match("version '(%d+%.%d+%.%d+)'")
